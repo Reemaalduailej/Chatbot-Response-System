@@ -43,8 +43,8 @@ def check_all_messages(message):
 
     # Longer responses
     response(long.R_ADVICE, ['give', 'advice'], required_words=['advice'])
-    response(long.R_RECOMMEND, ['What', 'do', 'you', 'recommend', 'doing', 'on', 'free', 'time'],
-             required_words=['recommend', 'free', 'time'])
+    response(long.R_RECOMMEND, ['What', 'do', 'you', 'think', 'should', 'on', 'free', 'time'],
+             required_words=['think', 'free', 'time'])
     response(long.R_WATER_INTAKE, ['how', 'much', 'water', 'should', 'I', 'drink'],
              required_words=['water', 'drink', 'how'])
 
@@ -65,4 +65,3 @@ def get_response(user_input):
 # Testing the response system
 while True:
     print('Bot: ' + get_response(input('You: ')))
-
